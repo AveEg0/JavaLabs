@@ -21,7 +21,8 @@ public class Main {
         System.out.println("Moving X elements to the end of the array");
         int[] newArray = moveElementsToEndArray(array,number);
         System.out.println("New Array:\n" + Arrays.toString(newArray));
-
+        long usedBytes = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+        System.out.println("\n used bytes = " + usedBytes);
     }
 
     private static int sumOfElementsWithOddIndex (int[] array) {
